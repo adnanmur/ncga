@@ -1,0 +1,1073 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="base.css" rel="stylesheet" />
+    <link href="Flickity.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+<body id="fullpage" class="loading" style="overflow-x:hidden;">
+    <main>
+        <div id="loader" class="section section-loader">
+            <div id="loader-text" class="text">
+                <span class="text1" style="width:100%; font-family: Shippori Mincho B1;font-style: normal;font-weight: normal;font-size: 44px;line-height: 55px;">In a world where<br />sustainability<br />matters more than ever, we need<br />all the help we can get.</span>
+                <span class="text2">And there’s no greater<br />resource than these.</span>
+                <span class="text3">The capable hands of<br />American corn growers.</span>
+                <span class="text1Mob" style="width:100%; font-family: Shippori Mincho B1;font-style: normal;font-weight: normal;font-size: 44px;line-height: 55px;">In a world where sustainability matters more than ever, we need all the help we can get.</span>
+                <span class="text2Mob">And there’s no greater<br />resource than these.</span>
+                <span class="text3Mob">The capable hands of<br />American corn growers.</span>
+            </div>
+            <div id="loader-progress" class="loadingbar">
+                <div class="lr left">
+                    0
+                </div>
+                <div id="progress" class="progress progressbar">
+                    <div id="bar" class="bar"></div>
+                </div>
+                <div class="lr">
+                    <span id="progress-counter">100%</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="root" class="root" style="display:none;">
+            <div class="content">
+                <section class="section section-hero">
+                    <div class="wrapper">
+                        <img id="hero-img" class="img-fluid hero-img" src="./img/hero-img.jpg" alt="">
+                    </div>
+                    <div class="wrap-hero-title">
+                        <div class="container">
+                            <h2 id="" class="hero-sub-title">
+                                These are the hands of
+                            </h2>
+                            <h1 id="hero-title" class="hero-title">
+                                <span class="letter">T</span><span class="letter">h</span><span class="letter">e</span><span class="letter"> </span><span class="letter">A</span><span class="letter">m</span><span class="letter">e</span><span class="letter">r</span><span class="letter">i</span><span class="letter">c</span><span class="letter">a</span><span class="letter">n</span>
+                                <span class="letter yellow">C</span><span class="letter yellow">o</span><span class="letter yellow">r</span><span class="letter yellow">n</span><span class="letter"> </span><span class="letter">F</span><span class="letter">a</span><span class="letter">r</span><span class="letter">m</span><span class="letter">e</span><span class="letter">r</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="scroll-wrapper">
+                        <div class="container">
+                            <a href="#carousel">Scroll to explore</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="carousel" class="section section-carousel">
+                    <div class="slideshow">
+                        <div id="carouselOverlay"></div>
+                        <div id="carouselVideo"></div>
+                        <div class="slide slide--layout-1" data-contentcolor="#e88655">
+                            <div id="carouselThumbnail1" class="slide__figure slide__figure--main" data-sort="3" data-play data-target="e_JQmF7Gtpc">
+                                <div class="slide__figure-img" style="background-image: url(img/slide1.jpg)"></div>
+                            </div>
+                            <h2 class="slide__title">“People are becoming<br />more and more concerned<br />about where their <span class="yellow">food is</span><br /><span class="yellow">coming from</span>.”
+                            </h2>
+                            <div class="slide__text slide__text">
+                                <p class="slide__text-description">Randy Hughes</p>
+                                <p class="slide__text-meta">JanesvillE, WI</p>
+                            </div>
+                        </div>
+                        <div class="slide slide--layout-2" data-contentcolor="#e88655">
+                            <div id="carouselThumbnail2" class="slide__figure slide__figure--main" data-sort="3" data-play data-target="Wi5f7r-r62E">
+                                <div class="slide__figure-img" style="background-image: url(img/slide2.jpg)"></div>
+                            </div>
+                            <h2 class="slide__title">"Our biggest goal is that<br />every day we leave this<br />farm <span class="yellow">a little bit better than</span><br /><span class="yellow">the previous day</span>."
+                            </h2>
+                            <div class="slide__text slide__text">
+                                <p class="slide__text-description">Andy Jobman</p>
+                                <p class="slide__text-meta">Gothenburg, NE</p>
+                            </div>
+                        </div>
+                        <div class="slide slide--layout-3" data-contentcolor="#e88655">
+                            <div id="carouselThumbnail3" class="slide__figure slide__figure--main" data-sort="3" data-play data-target="ALgvPdzikhg">
+                                <div class="slide__figure-img" style="background-image: url(img/slide3.jpg)"></div>
+                            </div>
+                            <h2 class="slide__title">"We started using cover<br />crops because we wanted<br />to try and reduce <span class="yellow">the soil</span><br /><span class="yellow">erosion</span>, and build <span class="yellow">soil</span><br /><span class="yellow">health</span> and <span class="yellow">cover crops</span><br />allow us to do that."
+                            </h2>
+                            <div class="slide__text slide__text">
+                                <p class="slide__text-description">Adam Bierbaum</p>
+                                <p class="slide__text-meta">Griswold, Iowa</p>
+                            </div>
+                        </div>
+                        <div class="slide slide--layout-4" data-contentcolor="#e88655">
+                            <div id="carouselThumbnail4" class="slide__figure slide__figure--main" data-sort="3" data-play data-target="yZZSUjzOHUo">
+                                <div class="slide__figure-img" style="background-image: url(img/slide4.jpg)"></div>
+                            </div>
+                            <h2 class="slide__title">"We're still <span class="yellow">a family farm</span><br />but it's operated more like<br />a business."
+                            </h2>
+                            <div class="slide__text slide__text">
+                                <p class="slide__text-description">Bryan and Lauren Biegler</p>
+                                <p class="slide__text-meta">Lake Wilson, MN</p>
+                            </div>
+                        </div>
+                        <div class="slide slide--layout-5" data-contentcolor="#e88655">
+                            <div id="carouselThumbnail5" class="slide__figure slide__figure--main" data-sort="3" data-play data-target="iVR-Ssj_d18">
+                                <div class="slide__figure-img" style="background-image: url(img/slide5.jpg)"></div>
+                            </div>
+                            <h2 class="slide__title">"If one of our kids was<br />really into computers, they<br />might be the most valuable<br />person on our farm <span class="yellow">in 20</span><br /><span class="yellow">years from now</span>."
+                            </h2>
+                            <div class="slide__text slide__text">
+                                <p class="slide__text-description">Krista and Brett Swanson</p>
+                                <p class="slide__text-meta">Oneida, IL</p>
+                            </div>
+                        </div>
+                    </div><!--/slideshow-->
+                    <svg class="hidden">
+                        <symbol id="icon-arrow" viewBox="0 0 24 24">
+                            <title>arrow</title>
+                            <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+                        </symbol>
+                        <symbol id="icon-nav" viewBox="0 0 407 660">
+                            <title>caret</title>
+                            <path d="M77 0L0 77l253 253L0 583l77 77 330-330z" />
+                        </symbol>
+                    </svg>
+                    <div class="frame">
+                        <div class="frame__title-wrap">
+                            <div class="nav">
+                                <div class="nav__counter">
+                                    <span>0</span>/<span>0</span>
+                                </div>
+                                <div class="nav__arrows">
+                                    <button class="nav__arrow nav__arrow--prev" data-hover>
+                                        <svg class="icon icon--rotated icon--nav"><use xlink:href="#icon-nav"></use></svg>
+                                    </button>
+                                    <button class="nav__arrow nav__arrow--next" data-hover>
+                                        <svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div><!-- /frame__title-wrap -->
+                    </div><!--/frame-->
+
+                    <div id="slideshowMob" class="slideshowMob">
+                        <div id="carouselOverlayMob"></div>
+                        <div id="carouselVideoMob"></div>
+                        <div id="slideMob1" class="slideMob active">
+                            <div class="quote">
+                                <h2>“People are becoming more and more concerned about where their <span class="yellow">food is coming</span> <span class="yellow">from</span>.”</h2>
+                            </div>
+                            <div class="autor">
+                                <br />
+                                <p>Randy Hughes</p>
+                                <p>JanesvillE, WI</p>
+                                <br />
+                            </div>
+                            <div id="carouselMobThumbnail1" class="img" style="background-image: url(img/slide1.jpg); background-position-y:inherit;" data-target="e_JQmF7Gtpc">
+                                <div><i class="icon fas fa-play" style="font-size:2rem; color:#F4D16F;text-align: center;"></i></div>
+                            </div>
+                            <div class="navigatorMob">
+                                <div id="slide1Prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div id="counter">
+                                    1/5
+                                </div>
+                                <div id="slide1Next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slideMob2" class="slideMob">
+
+                            <div class="quote">
+                                <h2>"Our biggest goal is that every day we leave this farm <span class="yellow">a little bit better than</span> <span class="yellow">the previous day</span>."</h2>
+                            </div>
+                            <div class="autor">
+                                <br />
+                                <p>Andy Jobman</p>
+                                <p>Gothenburg, NE</p>
+                                <br />
+                            </div>
+                            <div id="carouselMobThumbnail2" class="img" style="background-image: url(img/slide2.jpg)" data-target="Wi5f7r-r62E">
+                                <div><i class="icon fas fa-play" style="font-size:2rem; color:#F4D16F;text-align: center;"></i></div>
+                            </div>
+                            <div class="navigatorMob">
+                                <div id="slide2Prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div id="counter">
+                                    2/5
+                                </div>
+                                <div id="slide2Next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slideMob3" class="slideMob">
+
+                            <div class="quote">
+                                <h2>"We started using cover crops because we wanted to try and reduce <span class="yellow">the soil</span> <span class="yellow">erosion</span>, and build <span class="yellow">soil</span> <span class="yellow">health</span> and <span class="yellow">cover crops</span> allow us to do that."</h2>
+                            </div>
+                            <div class="autor">
+                                <br />
+                                <p>Adam Bierbaum</p>
+                                <p>Griswold, Iowa</p>
+                                <br />
+                            </div>
+                            <div id="carouselMobThumbnail3" class="img" style="background-image: url(img/slide3.jpg)" data-target="ALgvPdzikhg">
+                                <div><i class="icon fas fa-play" style="font-size:2rem; color:#F4D16F;text-align: center;"></i></div>
+                            </div>
+                            <div class="navigatorMob">
+                                <div id="slide3Prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div id="counter">
+                                    3/5
+                                </div>
+                                <div id="slide3Next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slideMob4" class="slideMob">
+
+                            <div class="quote">
+                                <h2>"We're still <span class="yellow">a family farm</span><br />But it's operated more like<br />a business."</h2>
+                            </div>
+                            <div class="autor">
+                                <br />
+                                <p>Bryan and Lauren Biegler</p>
+                                <p>Lake Wilson, MN<</p>
+                                <br />
+                            </div>
+                            <div id="carouselMobThumbnail4" class="img" style="background-image: url(img/slide4.jpg)" data-target="yZZSUjzOHUo">
+                                <div><i class="icon fas fa-play" style="font-size:2rem; color:#F4D16F;text-align: center;"></i></div>
+                            </div>
+                            <div class="navigatorMob">
+                                <div id="slide4Prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div id="counter">
+                                    4/5
+                                </div>
+                                <div id="slide4Next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="slideMob5" class="slideMob">
+
+                            <div class="quote">
+                                <h2>"If one of our kids was really into computers, they might be the most valuable person on our farm <span class="yellow">in 20</span> <span class="yellow">years from now</span>."</h2>
+                            </div>
+                            <div class="autor">
+                                <br />
+                                <p>Krista and Brett Swanson</p>
+                                <p>Oneida, IL</p>
+                                <br />
+                            </div>
+                            <div id="carouselMobThumbnail5" class="img" style="background-image: url(img/slide5.jpg)" data-target="iVR-Ssj_d18">
+                                <div><i class="icon fas fa-play" style="font-size:2rem; color:#F4D16F;text-align: center;"></i></div>
+                            </div>
+                            <div class="navigatorMob">
+                                <div id="slide5Prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <div id="counter">
+                                    5/5
+                                </div>
+                                <div id="slide5Next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="next-section" class="section section-since">
+                    <div class="content__item">
+                        <div class="content__item-imgwrap zoomImg"><div class="content__item-img animated-image omni in img" style="background-image: url(img/since.jpg);"></div></div>
+                    </div>
+                    <div class="overlay"></div>
+                    <div id="next-section-text" class="container content__item scrollingText">
+                        <div class="content__item-imgwrap scroll-text">
+                            <div class="content__item-img scroll text">
+                                <p>
+                                    Since 1980, corn farmers invested in advanced technology that enables them to grow more with less. In fact, they are doing so 45% more efficiently with every bushel grown.
+                                </p>
+                            </div>
+                            <div class="content__item-img scroll textMob">
+                                <p>
+                                    Since 1980, corn farmers invested in advanced technology that enables them to grow more with less. In fact, they are doing so 45% more efficiently with every bushel grown.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="commitment" class="section section-commitment">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 com-col commitmentText">
+                                <h2 id="commitment-text" class="commitment-title">
+                                    <span class="letter">A</span><span class="letter"> </span><span class="letter">C</span><span class="letter">o</span><span class="letter">m</span><span class="letter">m</span><span class="letter">i</span><span class="letter">t</span><span class="letter">m</span><span class="letter">e</span><span class="letter">n</span><span class="letter">t</span><span class="letter"> </span><span class="letter">t</span><span class="letter">o</span><span class="letter"> </span><span class="letter">t</span><span class="letter">h</span><span class="letter">e</span><span class="letter"> </span><span class="letter yellow">F</span><span class="letter yellow">u</span><span class="letter yellow">t</span><span class="letter yellow">u</span><span class="letter yellow">r</span><span class="letter yellow">e</span>
+                                </h2>
+                                <p id="commitment-paragraph-first" class="commitment-paragraph first">
+                                    Corn farmers’ commitment to these pillars of sustainability have paved the way for improvements in a number of key indicators over a span a several decades.
+                                </p>
+                                <p id="commitment-paragraph-second" class="commitment-paragraph second">
+                                    Looking to 2030, corn farmers are committed to:
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6" style="display:flex; flex-direction:row; justify-content:center;">
+                                <div>
+                                    <div class="content__item img1">
+                                        <div class="content__item-imgwrap" style="width:100%; height:100%; overflow:hidden;"><div class="content__item-img animated-image y" style="height:100%; background-image: url(img/comitment1.jpg);"></div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="content__item img2">
+                                            <div class="content__item-imgwrap" style="width:100%; height:100%; overflow:hidden;"><div class="content__item-img animated-image omni" style="height:100%; background-image: url(img/comitment2.jpg);"></div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="content__item img3">
+                                            <div class="content__item-imgwrap" style="width:100%; height:100%; overflow:hidden;"><div class="content__item-img animated-image x" style="height:100%; background-image: url(img/comitment3.jpg);"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="commitment-paragraph mob">
+                                Looking to 2030, corn farmers are committed to:
+                            </p>
+                        </div>
+                        <div id="circles-container" class="circle-wrap">
+                            <div class="progressbar1" data-animate="false">
+                                <p data-mh="progres-p" class="progres-p">Reducing Land use impact by </p>
+                                <div class="circlePercent">
+                                    <div id="circle1" class="circle invisible">
+                                        <h1 class="ml8 circlePercent1">
+                                            <span class="letters-container">
+                                                <span class="letters letters-left">12</span>
+                                                <span class="letters bang">%</span>
+                                            </span>
+                                            <span class="circle circle-white"></span>
+                                            <span class="circle circle-dark"></span>
+                                            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressbar1" data-animate="false">
+                                <p data-mh="progres-p" class="progres-p">Reducing soil erosion by</p>
+                                <div class="circlePercent">
+                                    <div id="circle2" class="circle invisible">
+                                        <h1 class="ml8 circlePercent2">
+                                            <span class="letters-container">
+                                                <span class="letters letters-left">13</span>
+                                                <span class="letters bang">%</span>
+                                            </span>
+                                            <span class="circle circle-white"></span>
+                                            <span class="circle circle-dark"></span>
+                                            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressbar1" data-animate="false">
+                                <p data-mh="progres-p" class="progres-p fix">Increasing irrigation water use efficiency by</p>
+                                <div class="circlePercent">
+                                    <div id="circle3" class="circle invisible">
+                                        <h1 class="ml8 circlePercent3">
+                                            <span class="letters-container">
+                                                <span class="letters letters-left">15</span>
+                                                <span class="letters bang">%</span>
+                                            </span>
+                                            <span class="circle circle-white"></span>
+                                            <span class="circle circle-dark"></span>
+                                            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressbar1" data-animate="false">
+                                <p data-mh="progres-p" class="progres-p fix1">Increasing energy use efficiency by</p>
+                                <div class="circlePercent">
+                                    <div id="circle4" class="circle invisible">
+                                        <h1 class="ml8 circlePercent4">
+                                            <span class="letters-container">
+                                                <span class="letters letters-left">13</span>
+                                                <span class="letters bang">%</span>
+                                            </span>
+                                            <span class="circle circle-white"></span>
+                                            <span class="circle circle-dark"></span>
+                                            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progressbar1" data-animate="false">
+                                <p data-mh="progres-p" class="progres-p">Reducing GHG emissions by 13%</p>
+                                <div class="circlePercent">
+                                    <div id="circle5" class="circle invisible">
+                                        <h1 class="ml8 circlePercent5">
+                                            <span class="letters-container">
+                                                <span class="letters letters-left">13</span>
+                                                <span class="letters bang">%</span>
+                                            </span>
+                                            <span class="circle circle-white"></span>
+                                            <span class="circle circle-dark"></span>
+                                            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div id="circles-container" class="circles-container" style="display:none;">
+                            <div class="circlePercent">
+                                <div id="circle1" class="circle invisible">
+                                    <h1 class="ml8 circlePercent1">
+                                        <span class="letters-container">
+                                            <span class="letters letters-left">12</span>
+                                            <span class="letters bang">%</span>
+                                        </span>
+                                        <span class="circle circle-white"></span>
+                                        <span class="circle circle-dark"></span>
+                                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="circlePercent">
+                                <div id="circle2" class="circle invisible">
+                                    <h1 class="ml8 circlePercent2">
+                                        <span class="letters-container">
+                                            <span class="letters letters-left">13</span>
+                                            <span class="letters bang">%</span>
+                                        </span>
+                                        <span class="circle circle-white"></span>
+                                        <span class="circle circle-dark"></span>
+                                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="circlePercent">
+                                <div id="circle3" class="circle invisible">
+                                    <h1 class="ml8 circlePercent3">
+                                        <span class="letters-container">
+                                            <span class="letters letters-left">15</span>
+                                            <span class="letters bang">%</span>
+                                        </span>
+                                        <span class="circle circle-white"></span>
+                                        <span class="circle circle-dark"></span>
+                                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="circlePercent">
+                                <div id="circle4" class="circle invisible">
+                                    <h1 class="ml8 circlePercent4">
+                                        <span class="letters-container">
+                                            <span class="letters letters-left">13</span>
+                                            <span class="letters bang">%</span>
+                                        </span>
+                                        <span class="circle circle-white"></span>
+                                        <span class="circle circle-dark"></span>
+                                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="circlePercent">
+                                <div id="circle5" class="circle invisible">
+                                    <h1 class="ml8 circlePercent5">
+                                        <span class="letters-container">
+                                            <span class="letters letters-left">13</span>
+                                            <span class="letters bang">%</span>
+                                        </span>
+                                        <span class="circle circle-white"></span>
+                                        <span class="circle circle-dark"></span>
+                                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>-->
+                        <p class="commitment-under">
+                            Source - Field to Market: The Alliance for Sustainable Agriculture, 2016. Environmental and Socioeconomic Indicators for Measuring Outcomes of On Farm Agricultural Production in the United States (Third Edition)
+                        </p>
+                    </div>
+                </section>
+                <section class="section section-lone-pic">
+                    <img class="img-fluid" src="./img/lone-pic.jpg" alt="">
+                </section>
+                <section id="percent" class="section-percent">
+                    <div id="percent-container" class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-7 order-2 order-lg-1">
+                                <div id="barras" class="barras">
+                                    <div class="barra">
+                                        <p>SOIL LOSS PERACRE DECREASED BY</p>
+                                        <div id="barra1" class="barra-nivel" data-nivel="58%"><span id="barraText1" class="barra-text"></span></div>
+                                    </div>
+                                    <div class="barra">
+                                        <p>
+                                            PER BUSHEL LAND USE
+                                            DECREASED BY
+                                        </p>
+                                        <div id="barra2" class="barra-nivel" data-nivel="41%"><span id="barraText2" class="barra-text"></span></div>
+                                    </div>
+                                    <div class="barra">
+                                        <p>CROPS YIELDS INCREASED BY</p>
+                                        <div id="barra3" class="barra-nivel" data-nivel="61%"><span id="barraText3" class="barra-text"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 order-1 order-lg-2">
+                                <h2 class="percent-title">
+                                    Changes in
+                                    corn production <span>since 1980</span>
+                                </h2>
+                                <p class="percent-p">
+                                    For today’s corn farmers, it means they are leaving the soil in a better place than where it started. With farms often being multi-generational, the emphasis on taking care of the land and the mantra to leave it better than before is not lost on the older or the next generation of farmers.
+                                </p>
+                                <span class="percent-second-p d-lg-none">Source: Field to Market Indicators Report, 2016</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="barras">
+                                    <div class="barra">
+                                        <p class="desktop" style="max-width:unset;">TOTAL CORN FOR GRAIN PRODUCTION INCREASED BY</p>
+                                        <p class="mob" style="max-width:unset;">TOTAL CORN FOR GRAIN<br /> PRODUCTION INCREASED BY</p>
+                                        <div id="barra4" class="barra-nivel long" data-nivel="119%"><span id="barraText4" class="barra-text"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 offset-lg-1 second-col">
+                                <span class="percent-second-p d-none d-lg-flex">Source: Field to Market Indicators Report, 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="img-percent">
+                    <div class="container">
+                        <h1 class="img-percent-heading">
+                            Adding Resilience Within an <span>Ecosystem</span> since 1980
+                        </h1>
+                        <div id="cards-wrapper" class="img-percent-wrapper d-none d-lg-flex">
+                            <div class="img-percent-box">
+                                <div class="flip-card first">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img class="img-fluid" src="./img/58.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="box-text">
+                                    Soil loss per acre decrased
+                                </p>
+                                <span id="percent1" class="percent-box">
+
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="img-percent-box">
+                                <div class="flip-card second">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img class="img-fluid" src="./img/46.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="box-text">
+                                    Irrigation water use per bushel decreased by
+                                </p>
+                                <span id="percent2" class="percent-box">
+
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="img-percent-box">
+                                <div class="flip-card third">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img class="img-fluid" src="./img/41.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="box-text">
+                                    Per bushel land use decreased by
+                                </p>
+                                <span id="percent3" class="percent-box">
+
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="img-percent-box">
+                                <div class="flip-card fourth">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img class="img-fluid" src="./img/41-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="box-text">
+                                    Energy use decreased by
+                                </p>
+                                <span id="percent4" class="percent-box">
+
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="img-percent-box">
+                                <div class="flip-card fifth">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img class="img-fluid" src="./img/31.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="box-text">
+                                    Green house gas emissions decreased by
+                                </p>
+                                <span id="percent5" class="percent-box">
+
+                                </span>
+                                <hr>
+                            </div>
+                        </div>
+                        <span class="source">
+                            Source: Field to Market Indicators Report, 2016
+                        </span>
+                        <div class="resilienceCarousel">
+                            <div class="item resItem">
+                                <div class="img-percent-box">
+                                    <img class="img-fluid" src="./img/58.jpg" alt="">
+                                    <p data-mh="box-p" class="box-text">
+                                        Soil loss per acre decrased
+                                    </p>
+                                    <span class="percent-box">
+                                        58%
+                                    </span>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="item resItem">
+                                <div class="img-percent-box">
+                                    <img class="img-fluid" src="./img/46.jpg" alt="">
+                                    <p data-mh="box-p" class="box-text">
+                                        Irrigation water use per bushel decreased by
+                                    </p>
+                                    <span class="percent-box">
+                                        46%
+                                    </span>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="item resItem">
+                                <div class="img-percent-box">
+                                    <img class="img-fluid" src="./img/41.jpg" alt="">
+                                    <p data-mh="box-p" class="box-text">
+                                        Per bushel land use decreased by
+                                    </p>
+                                    <span class="percent-box">
+                                        41%
+                                    </span>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="item resItem">
+                                <div class="img-percent-box">
+                                    <img class="img-fluid" src="./img/41-1.jpg" alt="">
+                                    <p data-mh="box-p" class="box-text">
+                                        Energy use decreased by
+                                    </p>
+                                    <span class="percent-box">
+                                        41%
+                                    </span>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="item resItem">
+                                <div class="img-percent-box">
+                                    <img class="img-fluid" src="./img/31.jpg" alt="">
+                                    <p data-mh="box-p" class="box-text">
+                                        Green house gas emissions decreased by
+                                    </p>
+                                    <span class="percent-box">
+                                        31%
+                                    </span>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!--<div class="resItem" style="display:flex; flex-direction:column;">
+        <div style="flex:1 1 auto;">
+            <img src="./img/58.jpg" alt="">
+        </div>
+        <div style="flex:0 0 auto;">
+            <p data-mh="box-p" class="box-text">
+                Soil loss per acre decrased
+            </p>
+        </div>
+        <div style="flex:0 0 auto;">
+            <span class="percent-box">
+                58%
+            </span>
+        </div>
+    </div>
+    <div class="resItem" style="display:flex; flex-direction:column;">
+        <div style="flex:1 1 auto;">
+            <img src="./img/46.jpg" alt="">
+        </div>
+        <div style="flex:0 0 auto;">
+            <p data-mh="box-p" class="box-text">
+                Irrigation water use per bushel decreased by
+            </p>
+        </div>
+        <div style="flex:0 0 auto;">
+            <span class="percent-box">
+                46%
+            </span>
+        </div>
+    </div>-->
+                            <!--<div class="item resilienceCarouselItem">
+        <div class="img-percent-box">
+            <img class="img-fluid" src="./img/58.jpg" alt="">
+            <p data-mh="box-p" class="box-text">
+                Soil loss per acre decrased
+            </p>
+            <span class="percent-box">
+                58%
+            </span>
+            <hr>
+        </div>
+    </div>
+    <div class="item resilienceCarouselItem">
+        <div class="img-percent-box">
+            <img class="img-fluid" src="./img/46.jpg" alt="">
+            <p data-mh="box-p" class="box-text">
+                Irrigation water use per bushel decreased by
+            </p>
+            <span class="percent-box">
+                46%
+            </span>
+            <hr>
+        </div>
+    </div>
+    <div class="item resilienceCarouselItem">
+        <div class="img-percent-box">
+            <img class="img-fluid" src="./img/41.jpg" alt="">
+            <p data-mh="box-p" class="box-text">
+                Per bushel land use decreased by
+            </p>
+            <span class="percent-box">
+                41%
+            </span>
+            <hr>
+        </div>
+    </div>
+    <div class="item resilienceCarouselItem">
+        <div class="img-percent-box gallery-cell">
+            <img class="img-fluid" src="./img/41-1.jpg" alt="">
+            <p data-mh="box-p" class="box-text">
+                Energy use decreased by
+            </p>
+            <span class="percent-box">
+                41%
+            </span>
+            <hr>
+        </div>
+    </div>
+    <div class="item resilienceCarouselItem">
+        <div class="img-percent-box gallery-cell">
+            <img class="img-fluid" src="./img/31.jpg" alt="">
+            <p data-mh="box-p" class="box-text">
+                Green house gas emissions decreased by
+            </p>
+            <span class="percent-box">
+                31%
+            </span>
+            <hr>
+        </div>
+    </div>-->
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="finding-section">
+                    <div id="circlesPerc-container" class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 first-col first-col-fix order-2 order-lg-1">
+                                <div class="progressbar">
+                                    <p data-mh="progres-p" class="progres-p fix">Energy use<br> decreased by</p>
+                                    <div id="circle41" class="loadingCircle">
+                                        <div class="progress yellow">
+                                            <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+                                            <div class="progress-value" data-percent="41">
+                                                <span class="loadingCircleValue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progressbar">
+                                    <p data-mh="progres-p" class="progres-p">Greenhouse gas emissions decreased by</p>
+                                    <div id="circle31" class="loadingCircle">
+                                        <div class="progress yellow">
+                                            <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+                                            <div class="progress-value" data-percent="31">
+                                                <span class="loadingCircleValue"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
+                                <h1 class="finding-title">
+                                    Finding Efficiencies Leads to <br>
+                                    <span>Energy Savings</span>
+                                </h1>
+                                <p class="finding-text">
+                                    Changes in corn production since 1980
+                                </p>
+                                <span class="finding-sub-text d-none d-lg-block">
+                                    Source: Field to Market Indicators Report, 2016
+                                </span>
+                            </div>
+                            <div class="col-12 d-lg-none order-3 order-lg-3">
+                                <span class="finding-sub-text">
+                                    Source: Field to Market Indicators Report, 2016
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-lone-pic second">
+                    <img class="img-fluid" src="./img/lone-pic1.jpg" alt="">
+                </section>
+                <section class="section-environmental">
+                    <div id="environmental-container" class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-5">
+                                <h1 class="enivorment-title">
+                                    Environmental
+                                    <span class="letter yellow">S</span><span class="letter yellow">u</span><span class="letter yellow">s</span><span class="letter yellow">t</span><span class="letter yellow">a</span><span class="letter yellow">i</span><span class="letter yellow">n</span><span class="letter yellow">a</span><span class="letter yellow">b</span><span class="letter yellow">i</span><span class="letter yellow">l</span><span class="letter yellow">i</span><span class="letter yellow">t</span><span class="letter yellow">y</span>
+                                </h1>
+                                <p class="enviroment-text">
+                                    Environmental sustainability is a guiding principle for the U.S. corn industry. Farmers have demonstrated a dedication to continuous improvement in how they manage resources and how production impacts the land, water and air over the last several decades.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 offset-lg-1">
+                                <span id="env-number" class="enviroment-number" data-number="300000">
+                                    300,000
+                                </span>
+                                <p class="enviroment-under-text">CORN FARMERS</p>
+                                <div id="environmentalPerc" class="percentages">
+                                    <div class="per-box">
+                                        <span class="before-percentage">
+                                            Average Yield
+                                        </span>
+                                        <div id="envPercent1" class="percent" data-percent="168">
+                                            168%
+                                        </div>
+                                        <span class="under-percentage">
+                                            Bushels Per Acre
+                                        </span>
+                                        <hr>
+                                    </div>
+                                    <div class="per-box mt-lg-5">
+                                        <span class="before-percentage">
+                                            Produce
+                                        </span>
+                                        <div id="envPercent2" class="percent" data-percent="58">
+                                            58%
+                                        </div>
+                                        <span class="under-percentage">
+                                            of world's corn
+                                        </span>
+                                        <hr>
+                                    </div>
+                                    <div class="per-box mt-lg-5">
+                                        <span class="before-percentage">
+                                            on only
+                                        </span>
+                                        <div id="envPercent3" class="percent" data-percent="10">
+                                            10%
+                                        </div>
+                                        <span class="under-percentage">
+                                            OF THE LAND DEDICATED TO CORN PRODUCTION GLOBALLY
+                                        </span>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-green">
+                    <div class="container">
+                        <h1 class="green-title">
+                            Driving large scale contributions to the the U.S. economy
+                        </h1>
+                        <div id="america" class="wrap fix">
+                            <img class="img-fluid" src="./img/country.png" alt="">
+                            
+                            
+                            <div class="green-numbers">
+                                <div class="number number-1">
+                                    <span>90.8</span>
+                                    <p>MILION ACRES PLANTED</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-2">
+                                    <span>$59.6</span>
+                                    <p>BILION CORN CROP VALUE</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-3">
+                                    <span>$2.27 T</span>
+                                    <p>WAGES</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-4">
+                                    <span>$885.30 B</span>
+                                    <p>TAXES</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-5">
+                                    <span>$4.20</span>
+                                    <p>BILLION BUSHELS PRODUCED</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-6">
+                                    <span>14.2</span>
+                                    <p>MILION ACRES PLANTED</p>
+                                    <hr>
+                                </div>
+                                <div class="number number-7">
+                                    <span>46,856,444</span>
+                                    <p>JOBS</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="green-numbers-mob">
+                                <!--<div id="owl-wrap" class="d-lg-none">
+                                    <div class="owl-carousel owl-theme owl-two">-->
+                                <div class="main-gallery">
+                                    <div class="mobnumber number-1 gallery-cell">
+                                        <span>90.8</span>
+                                        <p>MILION ACRES PLANTED</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-2 gallery-cell">
+                                        <span>$59.6</span>
+                                        <p>BILION CORN CROP VALUE</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-3 gallery-cell">
+                                        <span>$2.27 T</span>
+                                        <p>WAGES</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-4 gallery-cell">
+                                        <span>$885.30 B</span>
+                                        <p>TAXES</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-5 gallery-cell">
+                                        <span>$4.20</span>
+                                        <p>BILLION BUSHELS PRODUCED</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-6 gallery-cell">
+                                        <span>14.2</span>
+                                        <p>MILION ACRES PLANTED</p>
+                                        <hr>
+                                    </div>
+                                    <div class="mobnumber mobnumber-7 gallery-cell">
+                                        <span>46,856,444</span>
+                                        <p>JOBS</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                    <!--</div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </section>
+    </main>
+
+    <div class="cursor">
+        <div class="cursor__inner cursor__inner--circle"></div>
+        <div class="cursor__inner cursor__inner--dot">
+            <i class="icon fas fa-play" style="display:none;"></i>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script src="bakePie.js"></script>
+    <script src="https://kit.fontawesome.com/fd2ea44a13.js" crossorigin="anonymous"></script>
+    <script src="jquery.matchHeight.js"></script>
+    <script src="circle-progress.min.js"></script>
+    <script src="rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
+
+
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="script.js"></script>
+    <script src="js/Flickity.js"></script>
+    <script>
+        var flkty = new Flickity('.main-gallery', {
+            // options
+            cellAlign: 'center',
+            wrapAround: true,
+            contain: true
+        });
+
+        var flkty1 = new Flickity('.resilienceCarousel', {
+            // options
+            cellAlign: 'center',
+            freeScroll: true,
+            wrapAround: true,
+            prevNextButtons: true,
+            pageDots: false
+        });
+    </script>
+</body>
+</html>
