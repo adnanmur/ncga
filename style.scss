@@ -20,6 +20,11 @@ body {
         }
     }
 
+    main {
+        max-width: 1920px;
+        margin: auto;
+    }
+
     a {
         &:hover {
             text-decoration: none;
@@ -95,7 +100,6 @@ body {
             }
         }
     }*/
-    //Dino 16.04.2021
     @keyframes loader-loading {
         0% {
             opacity: 1;
@@ -484,9 +488,13 @@ body {
                 width: 1280px;
                 height: 720px;
             }
+
+            @include mq(tablet) {
+                width: 720px;
+                height: 405px;
+            }
         }
     }
-    //carousell mob
     .frame {
         display: none;
 
@@ -527,6 +535,10 @@ body {
             display: none;
             position: absolute;
 
+            @include mq(tablet) {
+                margin-top: 4rem;
+            }
+
             &.active {
                 display: inline-block;
             }
@@ -535,6 +547,10 @@ body {
                 /*height: 42vh;*/
                 height: 35vh;
                 padding: 1rem 1rem;
+
+                @include mq(tablet) {
+                    height: 18vh;
+                }
             }
 
             & .quote h2 {
@@ -577,6 +593,30 @@ body {
                 @include mq(tablet) {
                     background-position-y: -100px !important;
                 }
+
+                &#carouselMobThumbnail2 {
+                    @include mq(tablet) {
+                        background-position-y: -430px !important;
+                    }
+                }
+
+                &#carouselMobThumbnail3 {
+                    @include mq(tablet) {
+                        background-position-y: -350px !important;
+                    }
+                }
+
+                &#carouselMobThumbnail4 {
+                    @include mq(tablet) {
+                        background-position-y: -485px !important;
+                    }
+                }
+
+                &#carouselMobThumbnail5 {
+                    @include mq(tablet) {
+                        background-position-y: -240px !important;
+                    }
+                }
             }
         }
     }
@@ -588,7 +628,6 @@ body {
             background-position: center;
         }
     }
-    //
     span.yellow {
         color: #F4D16F;
     }
@@ -639,8 +678,14 @@ body {
 
             @include mq(desktop) {
                 top: 40rem;
-                padding-left: 20rem;
+                /*padding-left: 20rem;*/
                 display: block;
+                text-align: center;
+            }
+
+            & p {
+                display: inline-block;
+                position: relative;
             }
         }
 
@@ -657,7 +702,6 @@ body {
             }
         }
     }
-    //circles
     .circles-container {
         margin-bottom: 75px;
         display: flex;
@@ -670,7 +714,6 @@ body {
 
     .circlePercent {
         display: inline-block;
-        /*width: 20%;*/
         flex: 1 1 20%;
         margin-top: -3rem;
         transform: scale(0.8);
@@ -1010,7 +1053,6 @@ body {
             border-right: 0;
             -webkit-transform-origin: center right;
             transform-origin: center right;
-            //animation: loading-1 1.8s linear forwards
         }
 
         .progress .progress-value {
@@ -1018,7 +1060,6 @@ body {
             height: 90%;
             border-radius: 50%;
             background: #3B5440;
-            /*font-size: 24px;*/
             color: #F4D16F;
             line-height: 135px;
             text-align: center;
@@ -1047,9 +1088,6 @@ body {
             border-color: #F4D16F;
         }
 
-        .progress.yellow .progress-right .progress-bar {
-            /*animation: loading-3 1.8s linear forwards*/
-        }
 
         .progress.yellow .progress-left .progress-bar {
             animation: none
@@ -1069,7 +1107,6 @@ body {
             animation: animateCircle31 1.8s linear forwards
         }
     }
-    //
     .section-hero {
         position: relative;
         height: 100vh;
@@ -1271,6 +1308,7 @@ body {
             position: absolute;
             top: 40%;
             transform: translateY(-50%);
+            -webkit-transform: translateY(-200%);
             max-width: 768px;
             text-align: center;
 
@@ -1453,7 +1491,6 @@ body {
                         width: 20%;
                     }
                 }
-                //margin: 25px;
                 p {
                     font-weight: normal;
                     font-size: 14px;
@@ -1472,8 +1509,9 @@ body {
 
                     &.fix1 {
                         height: 4.6rem;
-                        @include mq(desktop){
-                            height:unset;
+
+                        @include mq(desktop) {
+                            height: unset;
                         }
                     }
 
@@ -1651,12 +1689,10 @@ body {
         }
 
         .barra-nivel {
-            //background: linear-gradient(270deg, #F4D271 -105.59%, rgba(244, 210, 113, 0.32) 42.41%, rgba(244, 210, 113, 0) 99.84%);
+            
             background: linear-gradient(90deg, rgba(61,85,64,1) 0%, rgba(89,105,61,1) 100%);
-            //mix-blend-mode: soft-light;
             width: 1px;
             height: 84px;
-            //max-width: 356px;
             -webkit-transition: width 1s ease;
             -moz-transition: width 1s ease;
             transition: width 1s ease;
@@ -1666,7 +1702,6 @@ body {
             & span {
                 font-family: 'Shippori Mincho B1', serif;
                 font-weight: normal;
-                /*font-size: 45px;*/
                 line-height: 74px;
                 color: #F4D16F;
 
@@ -2003,7 +2038,6 @@ body {
                 justify-content: center;
                 flex-direction: column;
                 width: 50%;
-                //margin: 25px;
                 p {
                     height: 5rem;
                     font-weight: normal;
@@ -2098,8 +2132,6 @@ body {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                //margin: -20px 0 0 -86px;
-                //width: 100%;
                 text-align: center;
                 line-height: 40px;
                 font-size: 31px;
@@ -2228,7 +2260,7 @@ body {
             color: #3B5440;
 
             @include mq(desktop) {
-                font-size: 130px;
+                font-size: 120px;
                 line-height: 137px;
             }
         }
@@ -2299,6 +2331,10 @@ body {
                     @include mq(desktop) {
                         width: auto;
                     }
+                }
+
+                &.sub {
+                    margin-top: 6rem !important;
                 }
             }
         }

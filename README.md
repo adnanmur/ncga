@@ -1,2 +1,0 @@
-# ncga
-Ncga Landing Page

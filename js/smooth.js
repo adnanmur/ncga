@@ -139,8 +139,10 @@
         layout() {
             if (this.DOM.image.classList.contains('in'))
                 this.DOM.image.style.transform = `scale3d(${this.renderedStyles.imageScale1.previous},${this.renderedStyles.imageScale1.previous},1)`;
-            else if (this.DOM.image.classList.contains('scroll'))
-                this.DOM.image.style.transform = `translateY(${this.renderedStyles.scroll.previous}rem)`;//ovje ubaciti scroll translate
+            else if (this.DOM.image.classList.contains('scroll')) {
+                this.DOM.image.style.transform = `translateY(${this.renderedStyles.scroll.previous}rem)`;                
+            }
+                
             else
                 this.DOM.image.style.transform = `scale3d(${this.renderedStyles.imageScale.previous},${this.renderedStyles.imageScale.previous},1)`;
         }

@@ -126,7 +126,6 @@ $('#slide1Prev, #slide2Prev, #slide3Prev, #slide4Prev, #slide5Prev').click(funct
 
 $(document).mouseup(function (e) {
 
-    //console.log($('#carouselVideoMob').css("display"));
     if ($('#carouselVideoMob').css("display") === "flex" && !$('#carouselVideoMob').is(e.target)) {
         $('#carouselVideoMob, #carouselOverlayMob').fadeOut('slow');
         document.getElementById("carouselVideoMob").style.display = "none";
@@ -192,7 +191,6 @@ $(window).scroll(function () {
     }
     //circlesPerc
     if (wS > (circlesPercT + circlesPercH - wH) && !circlesPerc.classList.contains("show") && !mobile) {
-        console.log("circlespecrent");
         circlesPerc.classList.add("show");
         animateCirclesPerc();
     }
@@ -691,7 +689,7 @@ function animateStats() {
         }).add({
             targets: '.number.number-7',
             scale: [0, 1],
-            translateX: '-300%',
+            translateX: '-270%',
             translateY: '35%',
             easing: "easeInOutQuad",
             duration: 400

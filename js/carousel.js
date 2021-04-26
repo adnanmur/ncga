@@ -76,18 +76,22 @@
             requestAnimationFrame(() => this.render());
         }
         enter() {
-            cursor.scale = 2.7;
+            //cursor.scale = 2.7;
+            cursor.DOM.el.classList.add("grow");
         }
         leave() {
-            cursor.scale = 1;
+            //cursor.scale = 1;
+            cursor.DOM.el.classList.remove("grow");
         }
         enterPlay() {
-            cursor.scale = 2.7;
+            //cursor.scale = 2.7;
             cursor.DOM.el.classList.add("play");
+            cursor.DOM.el.classList.add("grow");
         }
         leavePlay() {
-            cursor.scale = 1;
+            //cursor.scale = 1;
             cursor.DOM.el.classList.remove("play");
+            cursor.DOM.el.classList.remove("grow");
         }
         click() {
             this.lastScale = 1;

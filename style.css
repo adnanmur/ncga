@@ -4693,6 +4693,9 @@ body {
             transform: rotate(135deg)
         }
     }*/ }
+  body main {
+    max-width: 1920px;
+    margin: auto; }
   body a:hover {
     text-decoration: none; }
 
@@ -4984,6 +4987,10 @@ body {
         body #carouselVideoMob iframe {
           width: 1280px;
           height: 720px; } }
+      @media (min-width: 768px) {
+        body #carouselVideoMob iframe {
+          width: 720px;
+          height: 405px; } }
   body .frame {
     display: none; }
     @media (min-width: 992px) {
@@ -5011,12 +5018,18 @@ body {
     height: 100vh;
     display: none;
     position: absolute; }
+    @media (min-width: 768px) {
+      body .slideshowMob .slideMob {
+        margin-top: 4rem; } }
     body .slideshowMob .slideMob.active {
       display: inline-block; }
     body .slideshowMob .slideMob .quote {
       /*height: 42vh;*/
       height: 35vh;
       padding: 1rem 1rem; }
+      @media (min-width: 768px) {
+        body .slideshowMob .slideMob .quote {
+          height: 18vh; } }
     body .slideshowMob .slideMob .quote h2 {
       font-family: Shippori Mincho B1;
       font-style: normal;
@@ -5050,6 +5063,18 @@ body {
       @media (min-width: 768px) {
         body .slideshowMob .slideMob .img {
           background-position-y: -100px !important; } }
+      @media (min-width: 768px) {
+        body .slideshowMob .slideMob .img#carouselMobThumbnail2 {
+          background-position-y: -430px !important; } }
+      @media (min-width: 768px) {
+        body .slideshowMob .slideMob .img#carouselMobThumbnail3 {
+          background-position-y: -350px !important; } }
+      @media (min-width: 768px) {
+        body .slideshowMob .slideMob .img#carouselMobThumbnail4 {
+          background-position-y: -485px !important; } }
+      @media (min-width: 768px) {
+        body .slideshowMob .slideMob .img#carouselMobThumbnail5 {
+          background-position-y: -240px !important; } }
   body #next-section {
     height: 100vh; }
     body #next-section .Img {
@@ -5086,8 +5111,12 @@ body {
       @media (min-width: 992px) {
         body .scroll-text .text {
           top: 40rem;
-          padding-left: 20rem;
-          display: block; } }
+          /*padding-left: 20rem;*/
+          display: block;
+          text-align: center; } }
+      body .scroll-text .text p {
+        display: inline-block;
+        position: relative; }
     body .scroll-text .textMob {
       display: block;
       height: 100%; }
@@ -5105,7 +5134,6 @@ body {
         margin-bottom: 35px; } }
   body .circlePercent {
     display: inline-block;
-    /*width: 20%;*/
     flex: 1 1 20%;
     margin-top: -3rem;
     transform: scale(0.8); }
@@ -5343,7 +5371,6 @@ body {
       height: 90%;
       border-radius: 50%;
       background: #3B5440;
-      /*font-size: 24px;*/
       color: #F4D16F;
       line-height: 135px;
       text-align: center;
@@ -5363,8 +5390,6 @@ body {
           transform: scale(1.45); } }
     body .loadingCircle .progress.yellow .progress-bar {
       border-color: #F4D16F; }
-    body .loadingCircle .progress.yellow .progress-right .progress-bar {
-      /*animation: loading-3 1.8s linear forwards*/ }
     body .loadingCircle .progress.yellow .progress-left .progress-bar {
       animation: none; }
   body #circle41.animateCircle .progress.yellow .progress-right .progress-bar {
@@ -5523,6 +5548,7 @@ body {
       position: absolute;
       top: 40%;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-200%);
       max-width: 768px;
       text-align: center; }
       @media (min-width: 992px) {
@@ -5808,7 +5834,6 @@ body {
       body .section-percent .barra-nivel span {
         font-family: 'Shippori Mincho B1', serif;
         font-weight: normal;
-        /*font-size: 45px;*/
         line-height: 74px;
         color: #F4D16F; }
         @media (min-width: 992px) {
@@ -6200,7 +6225,7 @@ body {
       color: #3B5440; }
       @media (min-width: 992px) {
         body .section-environmental .enviroment-number {
-          font-size: 130px;
+          font-size: 120px;
           line-height: 137px; } }
     body .section-environmental .enviroment-under-text {
       font-family: 'Shippori Mincho B1', serif;
@@ -6254,6 +6279,8 @@ body {
           @media (min-width: 992px) {
             body .section-environmental .percentages .per-box:last-of-type {
               width: auto; } }
+        body .section-environmental .percentages .per-box.sub {
+          margin-top: 6rem !important; }
     body .section-environmental hr {
       max-width: 100%;
       margin-left: 0; }
