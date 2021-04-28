@@ -437,9 +437,30 @@ body {
             height: auto;
 
             @include mq(desktop) {
-                width: 1280px;
-                height: 720px;
+                width: 71vw;
+                height: 71vh;
             }
+        }
+    }
+
+    #carouselVideoClose {
+        width: 1.4rem;
+        height: 1.4rem;
+        top: -88vh;
+        left: 85vw;
+        position: relative;
+        z-index: 10002;
+        font-size: 2rem;
+        color: #F4D16F;
+        display: inline-block;
+        display: none;
+        cursor: pointer !important;
+
+        & i {
+            position: relative;
+            display: block;
+            top: -7px;
+            cursor: pointer !important;
         }
     }
 
@@ -526,6 +547,9 @@ body {
     }
 
     .slideshowMob {
+        height: 100%;
+        padding-top: 1rem;
+
         @include mq(desktop) {
             display: none;
         }
@@ -535,6 +559,7 @@ body {
             height: 100vh;
             display: none;
             position: absolute;
+            margin-top: 2rem;
 
             @include mq(tablet) {
                 margin-top: 4rem;
@@ -544,14 +569,17 @@ body {
                 display: inline-block;
             }
 
-            & .quote {
-                /*height: 42vh;*/
-                height: 35vh;
-                padding: 1rem 1rem;
+            & .quoteContainer {
+                display: flex;
+                flex-direction: column;
+                height: 43vh;
+            }
 
-                @include mq(tablet) {
+            & .quote {
+                padding: 1rem 1rem 0rem 1rem;
+                /*@include mq(tablet) {
                     height: 18vh;
-                }
+                }*/
             }
 
             & .quote h2 {
@@ -561,12 +589,22 @@ body {
                 line-height: 35px;
                 color: #FFFFFF;
                 font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+
+            & .separator {
+                flex: 1 0 auto;
+                border-left: 1px solid #fff;
+                /*margin: -1rem 0 1rem 1rem;*/
+                margin-left: 0.5rem;
             }
 
             & .autor {
-                height: 15vh;
+                flex: 0 0 auto;
+                /*height: 15vh;*/
                 padding: 1rem 1rem;
-                margin-top: -3rem;
+                /*margin-top: -3rem;*/
+                padding-top: 0;
             }
 
             & .autor p {
@@ -620,6 +658,55 @@ body {
                 }
             }
         }
+        /*#slideMob1 {
+            & .quote {
+                height: 24vh;
+            }
+
+            & .separator {
+                height: 11vh;
+            }
+        }
+
+        #slideMob2 {
+            & .quote {
+                height: 25vh;
+            }
+
+            & .separator {
+                height: 10vh;
+            }
+        }
+
+        #slideMob3 {
+            & .quote {
+                height: 34vh;
+            }
+
+            & .separator {
+                height: 1vh;
+            }
+        }
+
+        #slideMob4 {
+            & .quote {
+                height: 20vh;
+            }
+
+            & .separator {
+                height: 15vh;
+            }
+        }
+
+        #slideMob5 {
+            & .quote {
+                height: 29vh;
+            }
+
+            & .separator {
+                height: 6vh;
+            }
+        }*/
     }
 
     #next-section {
@@ -701,6 +788,7 @@ body {
 
             & p {
                 margin: 1rem 1rem;
+                transform: translateY(-100%);
             }
         }
     }
@@ -1177,7 +1265,7 @@ body {
             font-weight: bold;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: white !important;
             text-transform: uppercase;
             position: relative;
             transition: .5s;
@@ -1386,6 +1474,7 @@ body {
 
                 margin-bottom: 56px;
                 opacity: 0;
+                padding: 1rem 0rem;
 
                 @include mq(desktop) {
                     margin-bottom: 158px;
@@ -1605,17 +1694,7 @@ body {
             margin-top: 2rem;
 
             & #barra1 {
-                min-width: 80%;
-                max-width: 80%;
-
-                @include mq(desktop) {
-                    min-width: unset;
-                    max-width: unset;
-                }
-            }
-
-            & #barra2 {
-                min-width: 70%;
+                /*min-width: 80%;*/
                 max-width: 70%;
 
                 @include mq(desktop) {
@@ -1624,9 +1703,19 @@ body {
                 }
             }
 
+            & #barra2 {
+                /*min-width: 70%;*/
+                max-width: 62%;
+
+                @include mq(desktop) {
+                    min-width: unset;
+                    max-width: unset;
+                }
+            }
+
             & #barra3 {
-                min-width: 80%;
-                max-width: 80%;
+                /*min-width: 80%;*/
+                max-width: 77%;
 
                 @include mq(desktop) {
                     min-width: unset;
@@ -1635,7 +1724,7 @@ body {
             }
 
             & #barra4 {
-                min-width: 80%;
+                /*min-width: 80%;*/
                 max-width: 80%;
 
                 @include mq(desktop) {
@@ -1652,7 +1741,7 @@ body {
 
             p:not(.desktop) {
                 font-weight: normal;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 24px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
@@ -2200,6 +2289,22 @@ body {
     .section-lone-pic {
         background: -webkit-linear-gradient(top, rgba(255,0,0,0.0), rgba(255,0,0,0.0) 50%, #3B5440 50%, #3B5440);
 
+        & .imgMob {
+            display:unset;
+
+            @include mq(desktop){
+                display:none;
+            }
+        }
+
+        & .img {
+            display:none;
+
+            @include mq(desktop){
+                display:block;
+            }
+        }
+
         img {
             max-width: 87.5%;
 
@@ -2211,14 +2316,23 @@ body {
         &.second {
             background: -webkit-linear-gradient(bottom, rgba(255,0,0,0.0), rgba(255,0,0,0.0) 50%, #3B5440 50%, #3B5440);
 
-            img {
+            /*img {
                 max-width: 87.5%;
 
                 @include mq(desktop-xxl) {
                     max-width: 1265px;
                 }
-            }
+            }*/
         }
+    }
+
+    .lookingGlass {
+        z-index: 5;
+        position: relative;
+        left: 0%;
+        width: 80%;
+        height: 100%;
+        background-size: cover !important;
     }
 
     .section-environmental {

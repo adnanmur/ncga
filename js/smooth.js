@@ -85,6 +85,36 @@
                         const val = MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, fromValue, toValue);
                         return Math.min(Math.max(val, toValue), fromValue);
                     }
+                },
+                lookingGlass1: {
+                    // interpolated value
+                    previous: 0,
+                    // current value
+                    current: 0,
+                    // amount to interpolate
+                    ease: 1,
+                    // current value setter
+                    setValue: () => {
+                        const toValue = 40;
+                        const fromValue = -20;
+                        const val = MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, fromValue, toValue);
+                        return Math.max(Math.min(val, toValue), fromValue);
+                    }
+                },
+                lookingGlass2: {
+                    // interpolated value
+                    previous: 0,
+                    // current value
+                    current: 0,
+                    // amount to interpolate
+                    ease: 1,
+                    // current value setter
+                    setValue: () => {
+                        const toValue = -20;
+                        const fromValue = 40;
+                        const val = MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, fromValue, toValue);
+                        return Math.min(Math.max(val, toValue), fromValue);
+                    }
                 }
             };
             // gets the item's height and top (relative to the document)
@@ -142,7 +172,12 @@
             else if (this.DOM.image.classList.contains('scroll')) {
                 this.DOM.image.style.transform = `translateY(${this.renderedStyles.scroll.previous}rem)`;                
             }
-                
+            else if (this.DOM.image.classList.contains('lookingGlass2')) {
+                this.DOM.image.style.left = `${this.renderedStyles.lookingGlass1.previous}%`;
+            }  
+            else if (this.DOM.image.classList.contains('lookingGlass1')) {
+                this.DOM.image.style.left = `${this.renderedStyles.lookingGlass2.previous}%`;
+            }  
             else
                 this.DOM.image.style.transform = `scale3d(${this.renderedStyles.imageScale.previous},${this.renderedStyles.imageScale.previous},1)`;
         }
