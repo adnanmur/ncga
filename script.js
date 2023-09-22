@@ -212,6 +212,8 @@ function animateBars(duration) {
     });
 }
 
+
+
 function animateBar(bar, max, duration) {
 
     var tmp = 10;
@@ -485,16 +487,16 @@ function flipCards() {
     flipCard('.flip-card.first', 1, 58);
 
     setTimeout(function () {
-        flipCard('.flip-card.second', 2, 46);
+        flipCard('.flip-card.second', 2, 56);
     }, 500);
     setTimeout(function () {
-        flipCard('.flip-card.third', 3, 41);
+        flipCard('.flip-card.third', 3, 44);
     }, 1000);
     setTimeout(function () {
-        flipCard('.flip-card.fourth', 4, 41);
+        flipCard('.flip-card.fourth', 4, 55);
     }, 1500);
     setTimeout(function () {
-        flipCard('.flip-card.fifth', 5, 31);
+        flipCard('.flip-card.fifth', 5, 48);
     }, 2000);
 }
 
